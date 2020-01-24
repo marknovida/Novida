@@ -1,0 +1,78 @@
+<!DOCTYPE>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="mark.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+function Validation()
+{
+    var username = document.form1.name;
+    var password = document.form1.pass;
+
+      if (username.value == "")
+    {
+        alert("Your username wasn't recognised.");
+        username.focus();
+        return false;
+    }
+
+      if (password.value == "")
+    {
+        alert("Please enter a password.");
+        password.focus();
+        return false;
+    }
+     
+    else{
+    return true;
+    }
+}
+
+</script>
+</head>
+<body>
+<center>
+<div class="box">
+
+	<img src="logo.png" width="130px"><br>
+	
+	<form name="validation" onsubmit="return validation()" class="was-validated" method="post">
+	
+	<h3>Saint Jude College<br>Phinma Education Network</h3><br>
+
+	<label for="name">Username : </label>
+	<input id="name" class="form-group" type="text" required >
+	<div class="wrap-input100  validate-input" data-validate ="Please enter password">
+	<label for="pass">Password :</label>
+	<input id="pass" name="pass" type="password" required >
+	</div>
+	<br>
+	 <div id="check" class="custom-control custom-checkbox mb-3">
+    <input type="checkbox" class="custom-control-input" id="customControlValidation1">
+    <label id="us" class="custom-control-label" for="customControlValidation1">Remember Me</label>
+	</div>
+	<input name="submit" type="submit" value="Sign In" id="btn" class="btn btn-success">
+</form>
+
+<a href="forget.html"><button id="btn1" class="btn btn-dark" href="#">Forgot Password?</button></a>
+<hr size="2px" width="300px" color="black">
+<p class="p1">OR</p>
+
+	<p id="signup">Sign Up Using :</p>
+	<a href="create.html"><button id="create" class="btn btn-success">Create Account</button></a>
+<br><br><br>
+<div class="social">
+<button class="btn btn-danger go"><i class="fa fa-google">oogle</i></button>
+&nbsp; &nbsp; &nbsp;
+<button class="btn btn-primary fb"><i class="fa fa-facebook">acebook</i></button>
+</div>
+</div>
+
+</body>
+</html>
